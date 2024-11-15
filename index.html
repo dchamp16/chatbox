@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat App</title>
+    <style>
+        /* Basic styling for the chat app */
+        body { font-family: Arial, sans-serif; }
+        #messages { list-style-type: none; padding: 0; }
+        #messages li { padding: 8px; margin-bottom: 4px; background: #f1f1f1; }
+    </style>
+</head>
+<body>
+<!-- Message display area -->
+<ul id="messages"></ul>
+
+<!-- Chat input form -->
+<form id="form" action="">
+    <!-- Input field for entering messages -->
+    <input id="input" autocomplete="off" placeholder="Type your message..." />
+    <!-- Send button -->
+    <button>Send</button>
+</form>
+<!-- Include the Socket.IO client library from the server -->
+<script src="/socket.io/socket.io.js"></script>
+
+<!-- Link to the external client-side JavaScript file -->
+<script src="/client.js"></script>
+</body>
+</html>
